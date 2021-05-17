@@ -1,9 +1,8 @@
 header {
     width: 100%;
-    background-color: #6fd1ff;
 }
 header nav {
-    padding: 10px 100px;
+    padding: 15px 100px 5px 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

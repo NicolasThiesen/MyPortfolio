@@ -1,0 +1,35 @@
+footer{
+    background-color: #243AFF;
+    color: white;
+}
+footer nav{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+footer h2{
+    font-size: 18px;
+    margin: 0px 0px 3px 0px;
+}
+
+footer h3{
+    font-size: 12px;
+}
+
+footer img{
+    width: 100px;
+}
+
+.footer__badge{
+    width: 75px;
+}
+
+.footer__column{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
