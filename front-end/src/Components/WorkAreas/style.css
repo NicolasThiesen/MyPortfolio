@@ -1,0 +1,27 @@
+.work-section{
+    background-color: #a2c8df;
+    margin: 50px 0;
+    padding: 20px 0;
+    
+}
+.work-section h2{
+    text-align: center;
+}
+
+.section{
+    margin: auto;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15%;
+}
+
+.work-section .section div{
+    text-align: center;
+}
+
+.work-section .section div img{
+    width: 80px;
+    margin-bottom: 10px;
+}
