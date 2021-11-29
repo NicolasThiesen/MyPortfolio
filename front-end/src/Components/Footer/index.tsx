@@ -3,7 +3,7 @@ import "./style.css";
 import { Link } from 'react-router-dom'
 import CloudPractitioner from '../../Assets/Badge Cloud Practitioner.png'
 import CloudArchitect from '../../Assets/Badge Solutions Architect.png'
-
+import { i18n } from '../../translate/i18n';
 
 export const Footer = () => {
     return (
@@ -12,7 +12,7 @@ export const Footer = () => {
                 <div className="footer__column">                    
                     <img src={Icon}></img>
                     <h2>Nícolas Medeiros Thiesen</h2>
-                    <h3>| Arquiteto em Nuvem e Programador</h3>
+                    <h3>| {i18n.t("footer.title")}</h3>
                     
                 </div>
                 
