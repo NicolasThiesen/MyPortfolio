@@ -33,3 +33,21 @@ footer img{
     justify-content: space-between;
     align-items: center;
 }
+
+@media(max-width: 800px){
+    footer nav{
+        padding: 20px 20px;
+    }
+    footer img{
+        width: 75px;
+    }
+    .footer__badge{
+        width: 75px;
+    }
+    footer h2{
+        font-size: 14px;
+    }
+    footer h3{
+        font-size: 9px;
+    }
+}
