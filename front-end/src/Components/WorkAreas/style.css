@@ -1,5 +1,5 @@
 .work-section{
-    background-color: #a2c8df;
+    background-color: #a6e9ff;
     margin: 50px 0;
     padding: 20px 0;
     
@@ -24,4 +24,24 @@
 .work-section .section div img{
     width: 80px;
     margin-bottom: 10px;
+}
+
+@media(max-width: 800px){
+    .section{
+        padding: 10px 10px;
+    }
+}
+@media(max-width: 550px){
+    .work-section .section div{
+        height: 80px;
+    }
+    .work-section .section div img{
+        width: 50px;
+    }
+    .work-section h4{
+        font-size: 13px;
+    }
+    .work-section h2{
+        font-size: 20px;
+    }
 }
