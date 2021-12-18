@@ -2,9 +2,9 @@ const Arquitetura = require("../Models/Arquitetura")
 
 module.exports = {
     async store(req,res) {
-        const { nome, descricao, url_foto } = req.body;
-    
-        const arquitetura = await Arquitetura.create({ nome, descricao, url_foto })
+        const { name, description, url_photo } = req.body;
+
+        const arquitetura = await Arquitetura.create({ name, description, url_photo })
 
         return res.json({status: "Itens inseridos com sucesso!", itens: arquitetura})
     },
@@ -14,7 +14,10 @@ module.exports = {
         return res.json(arquitetura)
     },
     async destroy(req,res){
-        await Arquitetura.findByIdAndDelete(req.params.id);
+        const { id } = req.body
+        const result = await Arquitetura.findByIdAndDelete(id)
+        
+        console.log(result);
         return res.json({Mensagem: "Item removido com sucesso!"})
     }
 }
