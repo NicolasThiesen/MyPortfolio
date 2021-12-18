@@ -6,7 +6,7 @@
   "author": "Nícolas Medeiros Thiesen <49465248+NicolasThiesen@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js -L"
   },
   "dependencies": {
     "express": "^4.17.1",
