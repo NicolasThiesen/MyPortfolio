@@ -1,7 +1,12 @@
 FROM node
 
-COPY . .
+WORKDIR /usr/app
+
+COPY package.json .
+COPY yarn.lock .
 
 RUN yarn install
 
-CMD [ "yarn", "start"]
+EXPOSE 3333
+
+CMD [ "yarn", "dev"]
