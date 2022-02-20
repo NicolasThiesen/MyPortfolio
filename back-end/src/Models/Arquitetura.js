@@ -8,7 +8,8 @@ const TranslateSchema = new mongoose.Schema({
 const ArquiteturaSchema = new mongoose.Schema({
     name: TranslateSchema,
     description: TranslateSchema,
-    url_foto: String
+    short_description: TranslateSchema,
+    url_photo: String
 });
 
 
