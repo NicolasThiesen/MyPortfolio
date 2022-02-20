@@ -34,6 +34,13 @@ const messages = {
                     captcha_error: "Captcha is expered.",
                     captcha_help: "You need mark the captcha"
                 }
+            },
+            select_group: {
+                architecture: "Architectures",
+                sites: "Sites"
+            },
+            portfolio: {
+                site_button: "Go to the website"
             }
         }
     }

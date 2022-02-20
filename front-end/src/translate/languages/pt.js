@@ -35,6 +35,13 @@ const messages = {
                     captcha_error: "Captcha Expirou",
                     captcha_help: "Você precisa marcar o captcha"
                 }
+            },
+            select_group: {
+                architecture: "Arquiteturas",
+                sites: "Sites"
+            },
+            portfolio: {
+                site_button: "Ir para o Site"
             }
 
         }
