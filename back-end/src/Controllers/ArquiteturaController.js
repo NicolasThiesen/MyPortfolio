@@ -2,9 +2,9 @@ const Arquitetura = require("../Models/Arquitetura")
 
 module.exports = {
     async store(req,res) {
-        const { name, description, url_photo } = req.body;
+        const { name, description, short_description, url_photo } = req.body;
 
-        const arquitetura = await Arquitetura.create({ name, description, url_photo })
+        const arquitetura = await Arquitetura.create({ name, description, short_description, url_photo })
 
         return res.json({status: "Itens inseridos com sucesso!", itens: arquitetura})
     },

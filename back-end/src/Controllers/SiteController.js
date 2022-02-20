@@ -2,9 +2,9 @@ const Site = require("../Models/Site")
 
 module.exports = {
     async store(req,res) {
-        const { name, description, url_site, url_photo } = req.body;
+        const { name, description, short_description, url_site, url_photo } = req.body;
     
-        const site = await Site.create({ name, description, url_site, url_photo })
+        const site = await Site.create({ name, description, short_description, url_site, url_photo })
 
         return res.json({status: "Itens inseridos com sucesso!", itens: site})
     },
