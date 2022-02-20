@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 
 const app = express();
 
-mongoose.connect("mongodb://localhost/portfolio", {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect("mongodb://root:teste123@mongo:27017/", {useNewUrlParser: true, useUnifiedTopology: true})
 app.use(express.json());
 app.use(routes);
 
