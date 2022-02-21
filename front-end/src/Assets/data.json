@@ -1,0 +1,67 @@
+{
+	"architecture":[
+	{
+		"_id": "62117152b1939900b4141464",
+		"name": {
+			"_id": "62117152b1939900b4141465",
+			"pt": "Arquitetura de Sistema Moodle",
+			"eng": "Moodle System Architecture"
+		},
+		"description": {
+			"_id": "62117152b1939900b4141466",
+			"pt": "Essa arquitetura foi feita pensada em ser totalmente disponíve, resiliente, autoescalável e totalmente performática. As aplicações moodle foram subdivididas em duas Zonas de Disponibilidade diferentes, assim como o cacheamente memcache, o banco de dados MySql e o EFS. Também foram separados por camada de rede a aplicação, estando em um Subnet Pública e os serviços de armazenamento, estando em um Subnet Privado, dando assim mais segurança aos dados. Também foram implantadas Grupos de Segurança com as devidas regras de entrada e saída, para uma maior segurança e conformidade.",
+			"eng": "This architecture was designed to be fully available, resilient, self-scaling and fully performative. Moodle applications have been subdivided into two different Availability Zones, as well as memcache cache, MySql database and EFS. The application, being in a Public Subnet, and the storage services, being in a Private Subnet, were also separated by network layer, thus providing more security to the data. Security Groups were also implemented with the appropriate entry and exit rules, for greater security and compliance."
+		},
+		"short_description": {
+			"_id": "62117152b1939900b4141467",
+			"pt": "Essa arquitetura foi feita pensada em ser totalmente disponíve, resiliente, autoescalável e totalmente performática.",
+			"eng": "This architecture was designed to be fully available, resilient, self-scaling and fully performative."
+		},
+		"url_photo": "https://my-portfolio-assets-2341143.s3.sa-east-1.amazonaws.com/assets/arquiteturas/Infra%20Moodle.png",
+		"__v": 0
+	},
+	{
+		"_id": "62117180b1939900b414146b",
+		"name": {
+			"_id": "62117180b1939900b414146c",
+			"pt": "Automação de Alarme",
+			"eng": "Alarm Automation"
+		},
+		"description": {
+			"_id": "62117180b1939900b414146d",
+			"pt": "Automação de alarme que é executada por meio do slack via slash command. A automação cria alarmes padrões para cada tipo de recurso entra na conta do cliente e cria os alarmes. Otimizando assim tempo de criação, aumentando também a acertividade e a produtividade.",
+			"eng": "Alarm automation that is performed through slack via slash command. Automation creates default alarms for each type of resource enters the customer's account and creates the alarms. Thus optimizing creation time, also increasing accuracy and productivity."
+		},
+		"short_description": {
+			"_id": "62117180b1939900b414146e",
+			"pt": "Automação de alarme que é executada por meio do slack via slash command.",
+			"eng": "Alarm automation that is performed through slack via slash command."
+		},
+		"url_photo": "https://my-portfolio-assets-2341143.s3.sa-east-1.amazonaws.com/assets/arquiteturas/Alarm%20Automation%20Architecture.png",
+		"__v": 0
+	}
+],
+ "sites": [
+	{
+		"_id": "6212c272b1939900b414147f",
+		"name": {
+			"_id": "6212c272b1939900b4141480",
+			"pt": "Ecoliza",
+			"eng": "Ecoliza"
+		},
+		"description": {
+			"_id": "6212c272b1939900b4141481",
+			"pt": "Ecoliza é um site para coleta de lixo seletiva. O site ajuda a encontrar os pontos de coleta seletiva mais próximos de você, além de ajudar o usuário a entender os tipos de lixo e como descartá-los.",
+			"eng": "Ecoliza is a site for selective garbage collection. The site helps you find the selective collection points closest to you, as well as helping the user to understand the types of garbage and how to dispose of them."
+		},
+		"short_description": {
+			"_id": "6212c272b1939900b4141482",
+			"pt": "Ecoliza é um site para coleta de lixo seletiva.",
+			"eng": "Ecoliza is a site for selective garbage collection."
+		},
+		"url_site": "http://ecoliza.tk",
+		"url_photo": "https://my-portfolio-assets-2341143.s3.sa-east-1.amazonaws.com/assets/sites/Ecoliza.jpg",
+		"__v": 0
+	}
+]
+}
