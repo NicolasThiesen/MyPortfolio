@@ -11,7 +11,7 @@ export const Form = () => {
     const captcha = useRef<any>(null);
 
     const [captchaValid, setCaptchaValid] = useState(false);
-    const [userValid, setUserValid] = useState(null);
+    // const [userValid, setUserValid] = useState(null);
     const [open, setOpen] = useState(false);
     const [message, setMessage] = useState("");
     const [severety, setSeverety] = useState<AlertColor>('success')!;
@@ -90,7 +90,7 @@ export const Form = () => {
                     <ReCAPTCHA
                         ref={captcha}
                         sitekey={process.env.REACT_APP_RECAPTCHA_KEY || ""}
-                        hl={i18n.language == "eng" ? "en" : "pt"}
+                        hl={i18n.language === "eng" ? "en" : "pt"}
                         onChange={handleCaptcha}
                     />
                 </Box>
