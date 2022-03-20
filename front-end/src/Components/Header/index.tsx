@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 import { i18n } from '../../translate/i18n';
 import { useState } from 'react'
 import {Button, Menu, MenuItem} from '@material-ui/core';
-import { Menu as MenuIcon } from '@material-ui/icons'
-
+import { Menu as MenuIcon, Home} from '@material-ui/icons'
 const I18N_STORAGE_KEY = "i18nextLng"
 
 const Header = () => {
@@ -35,15 +34,12 @@ const Header = () => {
                     <Link className="link-item" to="/">
                         <li>{i18n.t("buttons.home")}</li>
                     </Link>
-                    <Link className="link-item" to="/abaut">
-                        <li>{i18n.t("buttons.about")}</li>
-                    </Link>
                     <Link className="link-item" to="/portfolio">
                         <li>{i18n.t("buttons.portfolio")}</li>
                     </Link>
-                    <Link className="link-item" to="/services">
+                    {/* <Link className="link-item" to="/services">
                         <li>{i18n.t("buttons.services")}</li>
-                    </Link>
+                    </Link> */}
                     <Link className="link-item" to="/contact">
                         <li>{i18n.t("buttons.contact")}</li>
                     </Link>
@@ -72,10 +68,7 @@ const Header = () => {
                             }}
                         >
                             <MenuItem onClick={handleClose}>
-                                <Link to="/">{i18n.t("buttons.home")}</Link>
-                            </MenuItem>
-                            <MenuItem onClick={handleClose}>
-                                <Link to="/about">{i18n.t("buttons.about")}</Link>
+                                <Link to="/">{i18n.t("buttons.home")} <Home></Home> </Link>
                             </MenuItem>
                             <MenuItem onClick={handleClose}>
                                 <Link to="/portfolio">

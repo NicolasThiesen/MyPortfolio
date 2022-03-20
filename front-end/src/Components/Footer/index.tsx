@@ -1,9 +1,10 @@
-import Icon from "../../Assets/Nicolas Icon.png"
+import Icon from "../../Assets/Nicolas Icon.png";
 import "./style.css";
-import CloudPractitioner from '../../Assets/Badge Cloud Practitioner.png'
-import CloudArchitect from '../../Assets/Badge Solutions Architect.png'
-import Linkedin from '../../Assets/linkedin.png'
-import Github from '../../Assets/github.png'
+import CloudPractitioner from '../../Assets/Badge Cloud Practitioner.png';
+import CloudArchitect from '../../Assets/Badge Solutions Architect.png';
+import DeveloperAssociate  from '../../Assets/Badge Developer Associate.png';
+import Linkedin from '../../Assets/linkedin.png';
+import Github from '../../Assets/github.png';
 
 import { i18n } from '../../translate/i18n';
 
@@ -22,7 +23,9 @@ export const Footer = () => {
                     
                     <div>
                         <img src={CloudPractitioner} className="footer__badge" alt="Cloud Practiotioner" />
-                        <img src={CloudArchitect} className="footer__badge" alt="Cloud Practiotioner" />
+                        <img src={CloudArchitect} className="footer__badge" alt="Solutions Architect Associate" />
+                        <img src={DeveloperAssociate} className="footer__badge" alt="Developer Associate" />
+                        
                     </div>
                     <div>
                         <a href="https://github.com/NicolasThiesen/">
